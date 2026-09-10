@@ -1,5 +1,5 @@
-const CACHE_NAME = "offline-notes-lab-v3";
-const APP_SHELL = ["/", "/manifest.webmanifest"];
+const CACHE_NAME = "offline-notes-lab-v4";
+const APP_SHELL = ["/offline-notes-lab/", "/offline-notes-lab/manifest.webmanifest"];
 
 self.addEventListener("install", (event) => {
  event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL)));
